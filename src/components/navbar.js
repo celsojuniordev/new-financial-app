@@ -19,12 +19,10 @@ function Navbar() {
         {
             label: 'Login'
         }
-        
     ]
 
     return (
         
-
         <Menubar model={items}/>
     )
 }
