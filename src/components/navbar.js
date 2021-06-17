@@ -11,7 +11,10 @@ function Navbar() {
             }
         },
         {
-            label: 'Usuário'
+            label: 'Usuário',
+            command: () => {
+                window.location.hash="/user-signup"
+            }
         },
         {
             label: 'Lançamento'
