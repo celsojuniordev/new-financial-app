@@ -61,27 +61,27 @@ class UserSignup extends React.Component {
         );
         return (
 
-            <Card title="Cadastro de usuário" style={{ width: '25rem' }} className="card" footer={footer}>
+            <Card title="Cadastro de usuário" style={{ width: '25rem', textAlign: 'center' }} className="card" footer={footer}>
                 <div className="row">
                     <div className="col-lg-12">
                         <div className="bs-component">
-                            <FormGroup label="Nome" htmlFor="inputName">
+                            <FormGroup label="Nome*" htmlFor="inputName">
                                 <InputText id="inputName"
                                     name="name"
                                     onChange={e => this.setState({ name: e.target.value })} />
                             </FormGroup>
-                            <FormGroup label="Email" htmlFor="inputEmail">
+                            <FormGroup label="Email*" htmlFor="inputEmail">
                                 <InputText id="inputEmail"
                                     name="email"
                                     onChange={e => this.setState({ email: e.target.value })} />
                             </FormGroup>
-                            <FormGroup label="Senha" htmlFor="inputPassword">
+                            <FormGroup label="Senha*" htmlFor="inputPassword">
                                 <InputText type="password"
                                     id="inputPassword"
                                     name="password"
                                     onChange={e => this.setState({ password: e.target.value })} />
                             </FormGroup>
-                            <FormGroup label="Confirmar senha" htmlFor="inputConfirmPassword">
+                            <FormGroup label="Confirmar senha*" htmlFor="inputConfirmPassword">
                                 <InputText type="password"
                                     id="inputConfirmPassword"
                                     name="confirmPassword"

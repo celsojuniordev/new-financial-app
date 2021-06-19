@@ -47,21 +47,19 @@ class Login extends React.Component {
 
         return (
 
-            <Card style={{ width: '25rem' }} className="card" title="Login" footer={footer}>
+            <Card style={{ width: '25rem', textAlign: 'center' }} className="card" title="Login" footer={footer}>
                 <div className="row">
                     <div className="col-lg-12">
                         <div className="bs-component">
-                            <FormGroup label="Email" htmlFor="inputEmail">
-                                <InputText id="inputEmail"
-                                    name="email"
-                                    placeholder="Digite o email"
+                            <FormGroup label="Email*" htmlFor="inputEmail">
+                                <InputText id="inputEmail" autoFocus 
+                                    name="inputEmail"
                                     onChange={e => this.setState({ email: e.target.value })} />
                             </FormGroup>
-                            <FormGroup label="Senha" htmlFor="inputPassword">
+                            <FormGroup label="Senha*" htmlFor="inputPassword">
                                 <InputText id="inputPassword"
                                     name="password"
                                     type="password"
-                                    placeholder="Digite a senha"
                                     onChange={e => this.setState({ password: e.target.value })} />
                             </FormGroup>
                         </div>
