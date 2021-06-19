@@ -1,4 +1,4 @@
-import ApiService from "../apiservice";
+import ApiService from "../api";
 
 class UserService extends ApiService {
 

@@ -3,6 +3,7 @@ import Navbar from './components/navbar';
 import { ToastContainer } from 'react-toastify'
 import Routes from './routes';
 
+import 'react-toastify/dist/ReactToastify.css';
 import 'bootswatch/dist/lumen/bootstrap.css'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'primereact/resources/themes/saga-blue/theme.css'
