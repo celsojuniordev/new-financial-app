@@ -7,7 +7,7 @@ function Navbar() {
         {
             label: 'Home',
             command:() => {
-                console.log('Teste')
+                window.location.hash="/home"
             }
         },
         {
