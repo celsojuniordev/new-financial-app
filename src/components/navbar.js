@@ -26,7 +26,7 @@ function Navbar() {
 
     return (
         
-        <Menubar model={items}/>
+        <Menubar className="menubar" model={items}/>
     )
 }
 

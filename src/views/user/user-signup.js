@@ -61,7 +61,7 @@ class UserSignup extends React.Component {
         );
         return (
 
-            <Card title="Cadastro de usuário" className="card mb-3" footer={footer}>
+            <Card title="Cadastro de usuário" style={{ width: '25rem' }} className="card" footer={footer}>
                 <div className="row">
                     <div className="col-lg-12">
                         <div className="bs-component">
