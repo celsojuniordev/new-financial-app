@@ -51,6 +51,13 @@ class UserSignup extends React.Component {
         this.props.history.push('/login')
     }
 
+    handleChange = (event) => {
+        const value = event.target.value
+        const name = event.target.name
+
+        this.setState({ [name]: value })
+    }
+
     render() {
 
         const footer = (
@@ -68,24 +75,24 @@ class UserSignup extends React.Component {
                             <FormGroup label="Nome*" htmlFor="inputName">
                                 <InputText id="inputName"
                                     name="name"
-                                    onChange={e => this.setState({ name: e.target.value })} />
+                                    onChange={this.handleChange} />
                             </FormGroup>
                             <FormGroup label="Email*" htmlFor="inputEmail">
                                 <InputText id="inputEmail"
                                     name="email"
-                                    onChange={e => this.setState({ email: e.target.value })} />
+                                    onChange={this.handleChange} />
                             </FormGroup>
                             <FormGroup label="Senha*" htmlFor="inputPassword">
                                 <InputText type="password"
                                     id="inputPassword"
                                     name="password"
-                                    onChange={e => this.setState({ password: e.target.value })} />
+                                    onChange={this.handleChange} />
                             </FormGroup>
                             <FormGroup label="Confirmar senha*" htmlFor="inputConfirmPassword">
                                 <InputText type="password"
                                     id="inputConfirmPassword"
                                     name="confirmPassword"
-                                    onChange={e => this.setState({ confirmPassword: e.target.value })} />
+                                    onChange={this.handleChange} />
                             </FormGroup>
                         </div>
                     </div>

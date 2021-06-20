@@ -37,6 +37,13 @@ class Login extends React.Component {
         this.props.history.push('/user-signup')
     }
 
+    handleChange = (event) => {
+        const value = event.target.value
+        const name = event.target.name
+
+        this.setState({ [name]: value })
+    }
+
     render() {
         const footer = (
             <span>
@@ -53,14 +60,14 @@ class Login extends React.Component {
                         <div className="bs-component">
                             <FormGroup label="Email*" htmlFor="inputEmail">
                                 <InputText id="inputEmail" autoFocus 
-                                    name="inputEmail"
-                                    onChange={e => this.setState({ email: e.target.value })} />
+                                    name="email"
+                                    onChange={this.handleChange} />
                             </FormGroup>
                             <FormGroup label="Senha*" htmlFor="inputPassword">
                                 <InputText id="inputPassword"
                                     name="password"
                                     type="password"
-                                    onChange={e => this.setState({ password: e.target.value })} />
+                                    onChange={this.handleChange} />
                             </FormGroup>
                         </div>
                     </div>

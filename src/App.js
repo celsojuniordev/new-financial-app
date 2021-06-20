@@ -1,15 +1,16 @@
 import React from 'react'
-import Navbar from './components/navbar';
+import Navbar from './components/navbar'
 import { ToastContainer } from 'react-toastify'
-import Routes from './routes';
+import Routes from './routes'
 
-import 'react-toastify/dist/ReactToastify.css';
+import 'react-toastify/dist/ReactToastify.css'
 import 'bootswatch/dist/lumen/bootstrap.css'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'primereact/resources/themes/saga-blue/theme.css'
 import 'primereact/resources/primereact.min.css'
 import 'primeicons/primeicons.css'
 import './custom.css'
+import 'primeflex/primeflex.css'
 
 class App extends React.Component {
 
@@ -26,4 +27,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default App
